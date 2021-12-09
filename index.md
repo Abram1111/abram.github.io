@@ -190,13 +190,21 @@ ________________________________________________________________________________
 # The use of & in C
 ## •	Logical-and
       if ( ( a>1 ) && (b<0) ) 
+      
 ## •	Bitwise-and
+
          x = a&b; Corresponding bits are and'ed (e.g. 0&1 -> 0)
+	 
 ## •	Bitwise-and-assign
+
        x &= y; Means the same as: x = x&y;
+       
 ## •	Address-of operator
+
        p = &x; Read: Assign to p (a pointer) the address of x.
+       
 ## •	The additional use of & (in parameters) in C++
+
 C++ uses a type of variable called a "reference" variable (or simply a "reference") which is not available in C (although the same effect can be achieved using pointers). References, pointers and addresses are closely related concepts. Addresses are addresses in computer memory (typically the address in memory where the value of some variable is stored), e.g. (in hexadecimal) 0xAB32C2. Pointers are variables which hold addresses, and so "point to" memory locations (and thus to the values of variables). Conceptually, reference variables are basically pointers by another name (but may not be instantiated as such by the compiler).
 
 It is possible to declare a reference within a function, like other variables, e.g.
